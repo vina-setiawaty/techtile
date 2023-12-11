@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans', sans-serif;
+  }
+  
+  body {
+    font-size: 62.5%;
+    width: 100%;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    height: 75px;
+    width: 100%;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2em;
+    overflow: hidden;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-bottom: 0.5px solid rgba(240,240, 240, 0.2);
+    z-index: 100;
+  }
+  
+  #product-text {
+    width: 20%;
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: left;
+    color: #777;
+  }
+
+  h1 {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  #header-img {
+    height: 60px;
+  }
+  
+  nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  nav li {
+    list-style: none;
+    border-radius: 10%;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    color: #001;
+  }
+  
+  nav li:hover {
+    /* background: rgb(128, 128, 128, 0.3) 0*/
+    color: #ccd;
+  }
+
+  .nav-link {
+    color: #112;
+  }
+
+  .nav-link:hover {
+    /* background: rgb(128, 128, 128, 0.3) 0*/
+    color: #777;
+  }
+  
+  #main-content {
+    max-width: 80%;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  #landing {
+    position: relative;
+    /* top: 75px; */
+    width: 100%;
+    height: 56.25vw;
+    /* margin: 75px 0px; */
+    /* margin: 100px auto; */
+    background-image: url("asset/landing-landscape.png");
+    background-size: 100%;
+  }
+
+  #landing-text {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin: auto 50% auto;
+    padding: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* margin: 100px auto; */
+  }
+
+  h2 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 3em;
+  }
+
+  #landing-title {
+    font-size: 5vw;
+    font-family: "Nunito Sans", sans-serif;
+    color: #777;
+    margin: 0px;
+  }
+
+  #landing-subtitle {
+    font-size: 1vw;
+    margin: 0px;
+  }
+  
+  #description {
+    display: flex;
+    justify-items: center;
+    align-items: center
+  }
+  
+  #video {
+    width: 1200px;
+    margin: 75px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  #product {
+    width: 100%;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+  }
+
+  #product-collection {
+    width: 65%;
+    display: flex;
+    padding: 5vw 0;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .product-card {
+    height: 60vh;
+    margin: 5px;
+    border: 3px solid rgba(240, 240, 240, 0.8);
+    border-radius: 10px;
+    transition: width .5s ease-in-out;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  #product-card-1 {
+    width: 10%;
+    /* transition: width .5s ease-in-out; */
+  }
+
+  #product-card-2 {
+    width: 70%;
+    /* transition: width .5s ease-in-out; */
+  }
+
+  #product-card-3 {
+    width: 10%;
+    /* transition: width .5s ease-in-out; */
+  }
+
+  #product-card-1:hover {
+    width: 70%;
+  }
+
+  #product-card-2:hover {
+    width: 70%;
+  }
+
+  #product-card-3:hover {
+    width: 70%;
+  }
+
+  #product-description {
+    width: 30%;
+    display: flex;
+    align-content: center;
+    justify-content: left;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  #product-question {
+    margin: 0px;
+    position: relative;
+    text-align: left;
+    padding: 0 5vw;
+    top: 4vw;
+    font-size: 4em;
+    font-family: 'Nunito Sans';
+    color:#222;
+  }
+
+  .description {
+    color: rgba(25, 25, 25, 0);
+    width: 80%;
+    padding: 0%;
+    position: absolute;
+    font-size: min(1.5vw, 10px);
+  }
+
+  .active {
+    color:rgba(25, 25, 25, 1);
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  #footer {
+    bottom: 0;
+    display: grid;
+    height: 150px;
+    align-content: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+    background-color: #112;
+  }
+
+  #footer-text {
+    padding: 15px;
+    bottom: 0;
+  }
+
+  h5 {
+    padding: 0;
+    margin: 0;
+    color: #CCC;
+    font-size: 1.5em;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @media only screen and (max-width: 767px) {
+    #video {
+      width: 100%;
+    }
+
+    #product {
+      width: 100%;
+      height: 100%;
+    }
+  
+    #product-collection {
+      width: 100%;
+      height: 60vw;
+      padding: 0;
+    }
+
+    .product-card {
+      height: 56.25vw;
+    }
+
+    #main-content {
+      max-width: 100%;
+    }
+
+    #landing {
+      background-image: url("asset/landing-potrait.png");
+      background-size: 100%;
+      width: 100%;
+      height: 177.8vw
+    }
+
+    #landing-text {
+      width: 100%;
+      height: 50%;
+      margin: 0 0 50%;
+    }
+
+    #landing-title {
+      font-size: 15vw;
+      font-family: "Nunito Sans", sans-serif;
+      margin: 75px 0px 0px;
+      color: #777;
+    }
+  
+    #landing-subtitle {
+      font-size: 2.5vw;
+      margin: 0px;
+    }
+
+    #use-cases {
+      width: 100%;
+    }
+
+    #product-question {
+      font-size: 3em;
+    }
+  }
+
+  @media only screen and (max-width: 1028px) {
+    #product {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+    }
+  
+    #product-collection {
+      width: 100vw;
+      height: 50%;
+    }
+
+    #product-description {
+      width: 100vw;
+      height: 20vh;
+      min-width: 100px;
+    }
+
+    #product-question {
+      margin: max(1vh, 4vw);
+      padding: 0;
+    }
+  }
+
+  /* 124.5px */

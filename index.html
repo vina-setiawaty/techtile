@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header id="header">
+    <div id="product-text">
+    <!-- <img src="" alt="product-head" id="header-img"> -->
+      <h1>TechTile</h1>
+    <!-- </div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="#sign-up-member" class="nav-link">Our Membership</a></li>
+        <li><a href="#description" class="nav-link">Watch Our Video</a></li>
+        <li><a href="#product-collection" class="nav-link">See Our Products</a></li>
+      </ul>
+    </nav> -->
+  </header>
+  <!-- <section id="main-content"> -->
+    <div id="landing">
+      <div id="landing-text">
+        <div>
+          <h1 id="landing-title">TechTile</h1>
+          <h2 id="landing-subtitle">Unassuming tile as a medium for interaction</h2>
+        </div>
+      </div>
+    </div>
+    <div id="description">
+      <video id="video" src="asset/OpenerD2.mp4" type="video/mp4" controls>
+      </video>
+    </div>
+    <div>
+      <h2 id="product-question">What would you use TechTile for?</h2>
+    </div>
+    <div id="product">
+      <div id="product-collection">
+        <div class="product-card" id="product-card-1" onclick="showSlides(0)" onmouseover="showSlides(0)">
+          <img src="asset/clock.jpg">
+        </div>
+        <div class="product-card" id="product-card-2" onclick="showSlides(1)" onmouseover="showSlides(1)">
+          <img src="asset/timer.jpg">
+        </div>
+        <div class="product-card" id="product-card-3" onclick="showSlides(2)" onmouseover="showSlides(2)">
+          <img src="asset/nightlight.png">
+        </div>
+      </div>
+      <div id="product-description">
+        <div class="description fade" id="product-description-1">
+          <h2>A clock that blends in with the wall</h2>
+        </div>
+        <div class="description fade" id="product-description-2">
+          <h2>A helpful kitchen timer for your coffee break</h2>
+        </div>
+        <div class="description fade" id="product-description-3">
+          <h2>An ambient night light to help in the dark</h2>
+        </div>
+      </div>
+    </div>
+  <!-- </section> -->
+  <div id="footer">
+    <div id="footer-text">
+      <h5>Adam Choo Wen Wu, Teo Tze Yang, Vina Setiawaty</h5>
+      <h5>Platform: Ceramic Circuits by Clement Zheng</h5>
+    </div>
+  </footer>
+</body>
